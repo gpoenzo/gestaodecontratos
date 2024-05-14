@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background-color: #003a79;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+ 
+}
+
+main {
+    display: flex;
+    width: 80%;
+    margin-top: 20px;
+}
+
+aside {
+    width: 30%;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+section {
+    width: 70%;
+    margin-left: 20px;
+}
+
+#course-title, #lesson-title {
+    color: #003a79;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+li:hover {
+    color: #003a79;
+}
+
+#video-container {
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    section {
+        width: 100%;
+        margin-left: 0;
+    }
+}
